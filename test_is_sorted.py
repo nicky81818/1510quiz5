@@ -15,15 +15,15 @@ class Test(TestCase):
         message = "positive unsorted list test failure"
         self.assertEqual(expected_value, actual_value, message)
 
-    def test_is_sorted_negative_sorted_list(self):
+    def test_is_sorted_one_element_list(self):
         expected_value = True
-        actual_value = is_sorted([-3, -2, -1])
+        actual_value = is_sorted([1])
         message = "negative sorted list test failure"
         self.assertEqual(expected_value, actual_value, message)
 
-    def test_is_sorted_negative_unsorted_list(self):
+    def test_is_sorted_many_element_list(self):
         expected_value = False
-        actual_value = is_sorted([-1, -2, -3])
+        actual_value = is_sorted([-1, -2, -3, 5, -10, 100])
         message = "negative unsorted list test failure"
         self.assertEqual(expected_value, actual_value, message)
 
