@@ -1,3 +1,8 @@
+"""
+Nicole Hsu A01340726
+"""
+
+
 def is_sorted(number_list):
     """
     Check if number_list is sorted.
@@ -22,7 +27,6 @@ def main():
     """
     Drives the program.
     """
-    print(is_sorted([0, 1, 2, 3]))
 
 
 if __name__ == "__main__":
