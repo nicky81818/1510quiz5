@@ -10,3 +10,6 @@ def is_sorted(number_list):
     :postcondition: correctly asserts True that number_list is sorted, else False
     :return: True if number_list is sorted, else False, as a boolean
     """
+    sorted_list = sorted(number_list)
+    return sorted_list == number_list
+
